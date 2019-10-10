@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de práctica">
+    <meta name="author" content="Felipe">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Mis Drogas</title>
+</head>
+<body>
+  <!-- Barra de navagación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./img/logo.png" alt="Logo" style="width: 80%">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indicadores.html">Indicadores</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+  
+  <!-- Área de juego y puntajes -->
+  <section>
+    <div class="container py-5 text-center">
+      <div class="row">
+        <div class="col-md-4 md-5">
+            <h3 class="text-white">Memorice</h3>
+            <div id="cronometro" class="titulo_cronometo">
+                00 : 00 : 00
+            </div>
+            <p>******************</p>
+        </div>
+        <div class="col-md-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" id="txt_nombre">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-dark btn-block text-white" id="btn_juego_nuevo">Juego nuevo</button>
+                    </div>
+                </div>
+                <div class="pt-5" id="div_tabla">
+                  <!-- Carga automática -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <h3 class="text-white">**********</h3>
+            <div class="container p-5">
+                <div class="row">
+                  <div class="col">
+                    <div class="card carta">
+                      <div class="card-body text-left">
+                        <h5 class="titulo_ranking">Listado de puntajes</h5>
+                        <table class="table table-dark" id="tabla_ranking">
+                          <!-- Acá van los ganadores -->
+                        </table>
+                        <div class="d-flex flex-row justify-content-center">
+                          <div class="p-4">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts personalizados -->
+  <script src="./scripts/main.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+</html>
